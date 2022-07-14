@@ -266,4 +266,8 @@ function handleTitleClick() {
 h1.addEventListener("click", handleTitleClick);
 
 
+- js 앱 만들기 시작 -
+
+여기서 부터 파일에 직접 필기 하였음
+
 
