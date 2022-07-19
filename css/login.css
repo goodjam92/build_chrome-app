@@ -1,0 +1,43 @@
+.login-wrap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: auto;
+}
+
+.login_box {
+  margin: auto;
+  position: absolute;
+  height: 850px;
+  width: 700px;
+  background-image: url("../img/login/lg.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1000px black;
+  z-index: 2;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-greeting {
+  margin-top: 300px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-greeting span {
+  display: block;
+  font-size: 5em;
+  font-family: "Tangerine", cursive;
+  color: black;
+}
