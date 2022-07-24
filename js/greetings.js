@@ -1,7 +1,7 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
-const loginImage = document.querySelector("#login_box_size");
+const loginImage = document.querySelector("#login_wrap");
 const loginGreeting = document.querySelector("#login-greeting");
 //const logOutButton = document.querySelector("#logout-btn");
 
@@ -20,7 +20,7 @@ function onLoginSubmit(event) {
 }
 
 function paintGreetings(username) {
-  greeting.innerText = `Hello ${username}`; // `` 백틱 사용
+  greeting.innerText = `Welcome to Hoguwats!! ${username}`; // `` 백틱 사용
   greeting.classList.remove(HIDDEN_CLASSNAME);
   //logOutButton.classList.remove(HIDDEN_CLASSNAME);
 }

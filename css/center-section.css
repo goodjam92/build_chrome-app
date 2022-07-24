@@ -1,0 +1,81 @@
+.center_container {
+  display: flex;
+  width: 1080px;
+  height: 520px;
+  padding: 10px;
+  font-family: fantasy;
+}
+
+.gryffindor_house,
+.slytherin_house {
+  width: 260px;
+  height: 520px;
+  margin-right: 10px;
+  border: 3px solid #fcce16;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hufflepuff_house,
+.ravenclaw_house {
+  width: 260px;
+  height: 450px;
+  margin-right: 10px;
+  border: 3px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ravenclaw_house {
+  border: 3px solid #d49f2d;
+  border-radius: 15px;
+}
+
+.slytherin_house {
+  margin-right: 0px;
+  border: 3px solid #7e7a7a;
+  border-radius: 15px;
+}
+
+.house_name {
+  width: 100%;
+  height: 75px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  text-align: center;
+  font-size: 32px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gryffindor_name {
+  background-color: rgb(159, 12, 13, 0.8);
+  text-shadow: 2px 2px 2px #fcce16;
+}
+.house_icon img {
+  padding-right: 7px;
+  max-width: 80px;
+  max-height: 80px;
+}
+.hufflepuff_name {
+  background-color: rgb(229, 191, 26, 0.8);
+  color: #f6e80f;
+  text-shadow: 3px 2px 1px black;
+}
+
+.ravenclaw_name {
+  background-color: rgba(55, 145, 175, 0.8);
+  color: #0a5c78;
+  text-shadow: 3px 2px 1px #d49f2d;
+}
+
+.slytherin_name {
+  background-color: rgba(50, 151, 89, 0.8);
+  color: #106434;
+  text-shadow: 3px 2px 1px rgb(249, 243, 243);
+}

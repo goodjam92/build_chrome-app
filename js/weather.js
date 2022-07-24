@@ -9,14 +9,13 @@ function onGeoOk(position) {
     .then((response) => response.json())
     .then((data) => {
       const weather = document.querySelector("#weather span:first-child");
-      const city = document.querySelector("#weather span:last-child");
+      const weather_city = document.querySelector("#weather span:last-child");
       // 날씨 아이콘 추가
       const icon = document.querySelector("#weather img");
       const weatherIconNo = data.weather[0].icon;
       icon.src = `img/icons/${weatherIconNo}.png`;
 
-      city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} & ${data.main.temp}°`;
+      weather.innerText = `${data.weather[0].main} / ${data.main.temp}°`;
     });
 }
 function onGeoError() {

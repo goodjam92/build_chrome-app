@@ -12,19 +12,19 @@
       rel="stylesheet"
     />
 
-    <title>Hogwats School App</title>
+    <title>Hoguwats School App</title>
   </head>
   <body>
-    <div class="login-wrap">
-      <div class="login_box" id="login_box_size">
+    <div class="login-wrap" id="login_wrap">
+      <div class="login_box">
         <div id="login-greeting">
-          <span>Welcome To Hogwats!</span>
+          <span>Welcome To Hoguwats!</span>
           <form class="hidden" id="login-form">
             <input
               type="text"
               required
               maxlength="15"
-              placeholder="Enter the username"
+              placeholder="Enter the Your Name"
             />
             <input class="login-button hidden" type="submit" value="Log In" />
           </form>
@@ -33,38 +33,265 @@
     </div>
 
     <div class="main_screen">
-      <div id="weather">
-        <div>
-          <span class="weather-temp"></span>
-          <div class="weather__icon__city">
-            <img src="" class="weather-icon" />
-            <span class="weather-city"></span>
+      <div class="contents_box">
+        <div class="top_container" id="weather">
+          <div class="top_section_left">
+            <h2 id="clock">00 : 00</h2>
+          </div>
+          <div class="top_section_center">
+            <h1 class="hidden" id="greeting"></h1>
+          </div>
+          <div class="top_section_right">
+            <div>
+              <span class="weather-temp"></span>
+            </div>
+            <div><img src="" class="weather-icon" /></div>
+          </div>
+        </div>
+
+        <div class="center_container">
+          <div class="gryffindor_house">
+            <div class="house_name gryffindor_name">
+              <div class="house_icon">
+                <img src="img/hoguwats/grf.jpg" />
+              </div>
+              <span>Gryffindor</span>
+            </div>
+            <div class="house_notice-board">
+              <div class="name_notice-board">
+                <span>Introduce your friends</span>
+              </div>
+              <div class="character_box">
+                <div class="character_img">
+                  <img src="img/character/harry.jpg" />
+                </div>
+                <div class="charcter_info">
+                  <div class="chracter_name">
+                    <span>Harry Potter</span>
+                  </div>
+                  <div class="chracter_etc">
+                    <span>July 31, 1980</span>
+                    <span>Godric's Hollow</span>
+                  </div>
+                </div>
+              </div>
+              <div class="character_box">
+                <div class="character_img">
+                  <img src="img/character/hr.jpeg" />
+                </div>
+                <div class="charcter_info">
+                  <div class="chracter_name">
+                    <span>Hermione</span>
+                  </div>
+                  <div class="chracter_etc">
+                    <span>Sep 19, 1979</span>
+                    <span>London</span>
+                  </div>
+                </div>
+              </div>
+              <div class="character_box">
+                <div class="character_img">
+                  <img src="img/character/wiz.jpeg" />
+                </div>
+                <div class="charcter_info">
+                  <div class="chracter_name">
+                    <span>Ron Weasley</span>
+                  </div>
+                  <div class="chracter_etc">
+                    <span>March 1, 1980</span>
+                    <span>Burrow</span>
+                  </div>
+                </div>
+              </div>
+              <div class="character_box">
+                <div class="character_img">
+                  <img src="img/character/nev.jpeg" />
+                </div>
+                <div class="charcter_info">
+                  <div class="chracter_name">
+                    <span>Neville</span>
+                  </div>
+                  <div class="chracter_etc">
+                    <span>July 30, 1980</span>
+                    <span>Somewhere..</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hufflepuff_house">
+            <div class="house_name hufflepuff_name">
+              <div class="house_icon">
+                <img src="img/hoguwats/huf.jpg" />
+              </div>
+              <span>Hufflepuff</span>
+            </div>
+            <div class="house_notice-board">
+              <div class="name_notice-board">
+                <span>Today DJ Student</span>
+              </div>
+              <div class="character_box">
+                <div class="character_img">
+                  <img src="img/character/sed.jpg" />
+                </div>
+                <div class="charcter_info">
+                  <div class="chracter_name">
+                    <span>Cedric</span>
+                  </div>
+                  <div class="chracter_etc">
+                    <span>Seb 30, 1977</span>
+                    <span>broadcasting</span>
+                  </div>
+                </div>
+              </div>
+              <div id="music_box">
+                <div id="musicPlayer">
+                  <div id="player"></div>
+                  <header id="musicListName">- Hedwig's Theme -</header>
+                  <span class="button"
+                    ><i
+                      title="backward"
+                      class="fa-solid fa-backward-step action_button"
+                      id="backward"
+                    ></i
+                  ></span>
+                  <span class="button">
+                    <i
+                      title="play"
+                      class="fa-solid fa-play action_button"
+                      id="play"
+                    ></i
+                  ></span>
+                  <span class="button"
+                    ><i
+                      title="pause"
+                      class="fa-solid fa-pause action_button"
+                      id="pause"
+                    ></i
+                  ></span>
+                  <span class="button">
+                    <i
+                      title="forward"
+                      class="fa-solid fa-forward-step action_button"
+                      id="forward"
+                    ></i
+                  ></span>
+                </div>
+              </div>
+              <div class="play_list">
+                <h2>- Music play list -</h2>
+                <span>1. Hedwig's Theme</span>
+                <span>2. That's Life</span>
+                <span>3. lo-fi Music</span>
+              </div>
+            </div>
+          </div>
+          <div class="ravenclaw_house">
+            <div class="house_name ravenclaw_name">
+              <div class="house_icon">
+                <img src="img/hoguwats/rav.jpg" />
+              </div>
+              <span>Ravenclaw</span>
+            </div>
+            <div class="house_notice-board">
+              <div class="name_notice-board">
+                <span>This week's duty</span>
+              </div>
+              <div class="character_box">
+                <div class="character_img">
+                  <img src="img/character/luna.jpeg" />
+                </div>
+                <div class="charcter_info">
+                  <div class="chracter_name">
+                    <span>Luna Lovegood</span>
+                  </div>
+                  <div class="chracter_etc">
+                    <span>February 13, 1981</span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="todo_duty">
+                <h2>- TO DO LIST -</h2>
+                <span>Spying on harry potter</span>
+                <span>Prepare for the next class</span>
+                <span>Erase the blackboard</span>
+                <span>Separate collection</span>
+              </div>
+              <button id="myBtn">...And other things to do</button>
+
+              <div id="myModal" class="modal">
+                <div id="box-outside" class="relative">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form id="todo-form">
+                      <input
+                        type="text"
+                        placeholder="Write a To Do and Press Enter"
+                        required
+                      />
+                    </form>
+                    <ul id="todo-list"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slytherin_house">
+            <div class="house_name slytherin_name">
+              <div class="house_icon">
+                <img src="img/hoguwats/sly.jpg" />
+              </div>
+              <span>Slytherin</span>
+            </div>
+            <div class="house_notice-board">
+              <div class="name_notice-board">
+                <span>Bully</span>
+              </div>
+              <div class="character_box">
+                <div class="character_img">
+                  <img src="img/character/mal.jpeg" />
+                </div>
+                <div class="charcter_info">
+                  <div class="chracter_name">
+                    <span>Malfoy</span>
+                  </div>
+                  <div class="chracter_etc">
+                    <span>June 5, 1980</span>
+                    <span>Wiltshire</span>
+                  </div>
+                </div>
+              </div>
+              <div class="move-img">
+                <img src="img/character/move-mal.gif" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom_container">
+          <div id="quote">
+            <div class="quote_box anima">
+              <span></span>
+            </div>
+            <div class="author_box anima">
+              <span></span>
+            </div>
           </div>
         </div>
       </div>
-
-      <h2 id="clock">00:00:00</h2>
-      <h1 class="hidden" id="greeting"></h1>
-
-      <form id="todo-form">
-        <input
-          type="text"
-          placeholder="Write a To Do and Press Enter"
-          required
-        />
-      </form>
-      <ul id="todo-list"></ul>
-      <!-- <button class="hidden" id="logout-btn">Log Out</button> -->
-      <div id="quote">
-        <span></span>
-        <span></span>
-      </div>
     </div>
+    <script
+      src="https://kit.fontawesome.com/ef84290deb.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

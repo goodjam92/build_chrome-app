@@ -8,6 +8,7 @@
   justify-content: center;
   text-align: center;
   overflow: auto;
+  z-index: 99;
 }
 
 .login_box {
@@ -20,7 +21,6 @@
   background-position: center;
   border-radius: 20px;
   box-shadow: 0 0 0 1000px black;
-  z-index: 2;
   color: black;
   display: flex;
   justify-content: center;
@@ -40,4 +40,19 @@
   font-size: 5em;
   font-family: "Tangerine", cursive;
   color: black;
+}
+
+#login-form input {
+  font-size: 20px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  text-align: center;
+  border-bottom: 2px solid var(--harry-color);
+  color: black;
+}
+
+#login-form input:focus {
+  outline: none;
 }

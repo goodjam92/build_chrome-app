@@ -1,5 +1,15 @@
 @import "reset.css";
 @import "login.css";
+@import "top-section.css";
+@import "center-section.css";
+@import "bottom-section.css";
+@import "notice-board.css";
+@import "music.css";
+@import "todo.css";
+:root {
+  --harry-color: #6a0100;
+  --border-bottom: 2px solid rgb(0, 0, 0, 0.3);
+}
 
 .hidden {
   display: none;
